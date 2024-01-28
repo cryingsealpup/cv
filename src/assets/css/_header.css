@@ -1,0 +1,28 @@
+.header {
+    height: 100%;
+    &__see-more {
+      display: flex;
+      font-size: 1rem;
+      font-weight: 300;
+      height: 5rem;
+      width: 20rem;
+      transition: background-image 0.5s linear;
+      justify-content: center;
+      margin-top: 2rem;
+  
+      &:hover {
+        /* background-image: url(../../img/triangles/more.svg); */
+        background-size: 100% 100% ;
+      }  
+    }
+  
+    &__more-info {
+      font-size: 1rem;
+      width: fit-content;
+      padding-left: 0;
+      list-style: none;
+      li {
+        font-weight: 300;
+      }
+    }
+  }
