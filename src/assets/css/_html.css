@@ -1,0 +1,56 @@
+html {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#app {
+    width: 100%;
+}
+
+h2 {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin: 0.3rem 0;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+p,
+li {
+    font-size: 1.3rem;
+}
+
+p {
+    font-weight: 100;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        font-weight: 100;
+    }
+}
+
+a {
+    color: inherit;
+    transition: 0.5s ease;
+
+    &:hover {
+        transition: 0.5s ease;
+        transform: skewX(-10deg);
+        color: white;
+        background: black;
+        text-decoration: none;
+    }
+}

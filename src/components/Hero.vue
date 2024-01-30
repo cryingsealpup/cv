@@ -2,11 +2,11 @@
 import { ref } from 'vue'
 </script>
 <template>
-    <div class="header__wrapper">
-        <h1>
-            Екатерина Радченко
-        </h1>
-        <h2>
+    <header class="header">
+        <div class="header__wrapper">
+            <h1 class="header__title">
+                Екатерина Радченко
+            </h1>
             <ul class="header__more-info">
                 <li>
                     Frontend-разработчик
@@ -15,6 +15,13 @@ import { ref } from 'vue'
                     Vanilla JS / Vue
                 </li>
             </ul>
-        </h2>
-    </div>
+            <a href="#about">
+                <div class="header__see-more">
+                    <p class="more">
+                        Больше
+                    </p>
+                </div>
+            </a>
+        </div>
+    </header>
 </template>
