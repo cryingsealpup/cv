@@ -71,7 +71,10 @@
       height: 4.7rem;
       position: absolute;
       width: 20.4rem;
-      transition: all 0.2s;
+      background: repeating-linear-gradient(white 0px, white 8px, white 8px, white 16px);;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+
     }
     &::after {
       content: '';
@@ -80,12 +83,14 @@
       height: 4rem;
       position: absolute;
       width: 20rem;
-      transition: all 0.2s;
+      transition: all 0.1s;
+      background: white;
     }
     &:hover {
       &::before {
         content: '';
-          background: repeating-linear-gradient(black 0px, black 8px, white 8px, white 16px);;
+        opacity: 1;
+        background: repeating-linear-gradient(black 0px, black 8px, white 8px, white 16px);;
       }
       &::after {
         background: white;

@@ -1,0 +1,14 @@
+.skills {
+    display: flex;
+    width: 26rem;
+    align-items: center;
+    gap: 3rem;
+    text-align: end;
+    justify-content: space-between;
+    margin: 2rem auto;
+}
+
+.stack {
+    /* height: 100dvh; */
+    margin: auto;
+}

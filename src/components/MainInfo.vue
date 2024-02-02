@@ -3,16 +3,13 @@ import { ref } from 'vue'
 </script>
 <template>
     <header class="header">
-        <div class="header__wrapper">
+        <div class="header__wrapper" v-motion-pop-visible>
             <h1 class="header__title">
                 Екатерина Радченко
             </h1>
             <ul class="header__more-info">
                 <li>
                     Frontend-разработчик
-                </li>
-                <li>
-                    Vanilla JS / Vue
                 </li>
             </ul>
             <a href="#about">

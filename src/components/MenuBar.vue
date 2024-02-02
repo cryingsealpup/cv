@@ -23,7 +23,7 @@ const menu = ref([
 </script>
 <template>
     <div class="menu">
-        <nav class="menu__links">
+        <nav class="menu__links" v-motion-slide-visible-top>
             <ul>
                 <li class="menu__item" v-for="item in menu"> <a :href="item.link">{{item.text}}</a> </li>
             </ul>

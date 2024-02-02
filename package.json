@@ -21,7 +21,8 @@
     "postcss-fixes": "^3.0.0",
     "postcss-load-config": "^5.0.2",
     "postcss-nested": "^6.0.1",
-    "vite": "^5.0.8"
+    "vite": "^5.0.8",
+    "@vueuse/motion": "^2.0.0"
   },
   "postcss": {
     "plugins": {
