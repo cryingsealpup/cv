@@ -12,8 +12,25 @@
     &-list {
         display: flex;
         flex-wrap: wrap;
+        margin: 2rem 0;
+        justify-content: center;
     }
     &-image {
-        width: 25rem;
+        width: 45rem;
     }
 }
+
+@media (max-width: 48em) {
+    .projects {
+        width: 100%;
+        &-wrapper {
+            width: 100%;
+            & > * {
+                margin: 1rem;
+            }
+        }
+        &-image {
+            width: 100%;
+        }
+    }
+  };

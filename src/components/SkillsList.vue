@@ -21,3 +21,11 @@ const skills = ref({
         </div>
     </div>
 </template>
+
+<style scoped>
+@media (max-width: 48em) {
+    h2 {
+        font-size: 1.1rem;
+    }
+}
+</style>

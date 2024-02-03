@@ -12,3 +12,16 @@
     /* height: 100dvh; */
     margin: auto;
 }
+
+
+@media (max-width: 48em) {
+    .skills {
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .stack {
+        margin: 0 1rem;
+    }
+  };

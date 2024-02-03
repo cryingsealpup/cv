@@ -22,3 +22,12 @@ import { ref } from 'vue'
         </div>
     </header>
 </template>
+
+<style scoped>
+@media (max-width: 48em) {
+    a {
+        margin: 0 auto;
+    }
+}
+
+</style>
