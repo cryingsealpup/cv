@@ -1,6 +1,8 @@
 <script setup>
 import { ref, computed } from 'vue'
-
+import dontsova from '../assets/images/dontsova.png'
+import gallery from '../assets/images/gallery.png'
+import hangman from '../assets/images/hangman.png'
 const filter = ref(null)
 
 const projects = ref([
@@ -12,7 +14,7 @@ const projects = ref([
             desc: 'Выдает случайную книгу Дарьи Донцовой по клику',
             repo: 'https://github.com/cryingsealpup/agrippina',
             deploy: 'https://cryingsealpup.github.io/agrippina/',
-            img: '/src/assets/images/dontsova.png'
+            img: dontsova
         }
     },
     {
@@ -20,10 +22,10 @@ const projects = ref([
         info:
         {
             name: 'cv',
-            desc: 'Эта страница',
+            desc: 'Unsplash-галерея',
             repo: '',
             deploy: '',
-            img: '/src/assets/images/gallery.png'
+            img: gallery
         }
     },
     {
@@ -34,7 +36,7 @@ const projects = ref([
             desc: 'Виселица',
             repo: '',
             deploy: '',
-            img: '/src/assets/images/hangman.png'
+            img: dontsova
         }
     },
     {
@@ -45,7 +47,7 @@ const projects = ref([
             desc: 'Виселица',
             repo: '',
             deploy: '',
-            img: '/src/assets/images/hangman.png'
+            img: hangman
         }
 
     }
@@ -69,13 +71,13 @@ const removeFilterValue = () => {
                 <div class="search-input">
                     <input type="text" v-model="filter" :class="touched" autocomplete="off">
 
-                    <button type="reset" aria-label="Clear input" title="Clear input" @click.prevent="filter.value = null ">×</button>
+                    <button type="reset" aria-label="Clear input" title="Clear input" @click.prevent="filter = null">×</button>
                 </div>
                 </div>
                 <ul class="projects-list">
                     <li v-for="project in projectTab" v-motion-slide-visible-left>
                         <img :src="project.info.img" alt="" class="projects-image">
-                        <div>
+                        <div class="projects-list__description">
                             <a href="project.info.repo"> Код </a>
                             <a href="project.info.deploy"> Деплой </a>
                         </div>

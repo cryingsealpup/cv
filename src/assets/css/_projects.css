@@ -14,6 +14,13 @@
         flex-wrap: wrap;
         margin: 2rem 0;
         justify-content: center;
+        &__description {
+            display: flex;
+            justify-content: space-around;
+            > * {
+                text-decoration: dotted;
+            }
+        }
     }
     &-image {
         width: 45rem;

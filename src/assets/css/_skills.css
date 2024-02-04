@@ -11,6 +11,8 @@
 .stack {
     /* height: 100dvh; */
     margin: auto;
+    display: grid;
+    grid-template-rows: masonry;
 }
 
 

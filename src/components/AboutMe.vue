@@ -9,7 +9,7 @@ import { ref } from 'vue'
             </h2>
             <div class="about__info">
                 <p>
-                    Люблю веб-технологии: изучать их и применять. 
+                    Люблю веб-технологии: изучать и применять. 
                 </p>
                 <!-- <img src="assets/img/me.png" alt="My portfolio pic"> -->
             </div>
